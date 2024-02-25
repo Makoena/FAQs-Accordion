@@ -1,5 +1,11 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body{
-    background-color: var(--lightpink);
+    background-color: white;
     background-repeat: no-repeat;
     background-image: url(images/background-pattern-desktop.svg);
     display: grid;
@@ -33,7 +39,7 @@ button:hover {
     border-radius: 2rem;
     padding: 1.6rem;
     margin: 2rem;
-    max-width: 900px;
+    max-width: 700px;
 }
 
 .faq-headline{
@@ -42,7 +48,7 @@ button:hover {
 
 .faq-headline h1{
     font-size: 4rem;
-    font-weight: 900;
+    font-weight: 600;
 }
 
 .accordion-container .accordion-item:not(:last-child){
@@ -56,3 +62,21 @@ button:hover {
 .accordion-item .icons .minus-icon{
     display: none;
 }
+
+.accordion-description{
+    max-height: 0;
+    background-color: white;
+    overflow: hidden;
+    transition: max-height 200ms ease;
+}
+
+.accordion-description p {
+    color:#887191;
+}
+@media  (max-width: 540px) {
+    body{
+        background-image: url(images/background-pattern-mobile.svg);
+    }
+}
+    
+
