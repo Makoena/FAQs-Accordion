@@ -22,43 +22,50 @@ Users should be able to:
 # Links
 https://github.com/Makoena/FAQs-Accordion.git 
 
-# My process
-
 # Built with
 - HTML5
 - CSS
 -JavaScript
 
+
 # What I learned
+- i have learned how to use div class to add icon that are align to text
+- i have learnt that you can justify content to space it in between. 
+- most lesson i learned was using javascript to add event to my icons 
 
-.proud-of-this-html. <div class="accordion-item">
-                <button id="accordion-btn" class="accordion-btn">
-                    How can I get help if I'm stuck on a Frontend Mentor challenge?
-    
-                    <div class="icons">
-                        <img class="plus-icon btn-icon" src="images/icon-plus.svg" alt="btn-icon">
-                        <img class="minus-icon btn-icon" src="images/icon-minus.svg" alt="btn-icon">
-                    </div>
-                </button>
-                </div>
+.proud-of-this-javascript - .
+ const accordionBtns =document.querySelectorAll('.accordion-btn')
 
+accordionBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+        this.classList.toggle('active')
+        const accordionDescription = this.nextElementSibling
+        const plusIcon = this.querySelector('.plus-icon')
+        const minusIcon = this.querySelector('.minus-icon')
 
-.proud-of-this-css  . button {
-	cursor: pointer;
-	background-color: transparent;
-	width: 100%;
-	padding: 1rem;
-	font-weight: 600;
-	text-align: left;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	gap: 1rem;
-	border: 0;
-}
+        if(accordionDescription.style.maxHeight){
+            accordionDescription.style.maxHeight=null
+            plusIcon.style.display='block'
+            minusIcon.style.display ='none'
+        }
+        else {
+            accordionDescription.style.maxHeight= accordionDescription.scrollHeight +
+            'px'
+            plusIcon.style.display='none'
+            minusIcon.style.block
+        }
+    })
+})
+# Continue Development
+- Javascript -  i need a thourough understand on javascript concepts and also learn more on events.
+- CSS - need to learn to you different styling patterns and designs.
 
 # Useful resources
-- https://www.w3schools.com/colors/colors_hsl.asp - This was more helpful choosing color and also adjusting the right size
+- [WAI Accordion Example](https://www.w3.org/WAI/ARIA/apg/patterns/accordion/examples/accordion/) - I used this accordion pattern in this project.
+https://www.youtube.com/watch?v=AxD9slgNDJI
+
 
 
 #  Acknowledgments
+https://www.youtube.com/watch?v=AxD9slgNDJI
+https://www.youtube.com/watch?v=XgxeUCMflV4
