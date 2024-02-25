@@ -34,16 +34,16 @@ https://github.com/Makoena/FAQs-Accordion.git
 - most lesson i learned was using javascript to add event to my icons 
 
 .proud-of-this-javascript - .
- const accordionBtns =document.querySelectorAll('.accordion-btn')
 
+
+ const accordionBtns =document.querySelectorAll('.accordion-btn')
 accordionBtns.forEach(btn => {
     btn.addEventListener('click', function() {
         this.classList.toggle('active')
         const accordionDescription = this.nextElementSibling
         const plusIcon = this.querySelector('.plus-icon')
         const minusIcon = this.querySelector('.minus-icon')
-
-        if(accordionDescription.style.maxHeight){
+ if(accordionDescription.style.maxHeight){
             accordionDescription.style.maxHeight=null
             plusIcon.style.display='block'
             minusIcon.style.display ='none'
