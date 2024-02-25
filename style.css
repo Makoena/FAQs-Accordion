@@ -1,82 +1,82 @@
+
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
-body{
-    background-color: white;
-    background-repeat: no-repeat;
-    background-image: url(images/background-pattern-desktop.svg);
-    display: grid;
-    background-size: 100%;
-    font-family: 'sans-serif';
-    align-content: center;
+body {
+	background-color: var(--light-pink);
+	background-image: url(images/background-pattern-desktop.svg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	font-family: 'sans-serif';
+	min-height: 100vh;
+	display: grid;
+	place-content: center;
 }
-img, svg {
-    display: block;
-    max-width: 100%;
-}
+
 
 button {
-    border: 0;
-    background-color: transparent;
-    padding: 1rem;
-    text-align: left;
-    align-items: center;
-    gap: 1rem;
-    display: flex;
-    cursor: pointer;
-    width: 100%;
-    font-weight: 800;
-    justify-content: space-between;
+	cursor: pointer;
+	background-color: transparent;
+	width: 100%;
+	padding: 1rem;
+	font-weight: 600;
+	text-align: left;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+	border: 0;
 }
 
 button:hover {
-    color: purple;
+	color: purple;
 }
-.container{
-    border-radius: 2rem;
-    padding: 1.6rem;
-    margin: 2rem;
-    max-width: 700px;
+
+.container {
+	background-color: var(--white);
+	max-width: 800px;
+	padding: 1.5rem;
+	margin: 1rem;
+	border-radius: 1rem;
 }
 
 .faq-headline{
-    gap: 2rem;
+	gap: 2rem;
 }
 
-.faq-headline h1{
-    font-size: 4rem;
-    font-weight: 600;
+.faq-headline h1 {
+	font-size: 4rem;
+	font-weight: 700;
 }
 
 .accordion-container .accordion-item:not(:last-child){
-    border-bottom: 2px solid var(--lightpink);
+	border-bottom: 2px solid var(--light-pink);
 }
 
-.accordion-item .icons img{
-    min-width: 30px;
+.accordion-description {
+	background-color: var(--white);
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 200ms ease;
 }
 
-.accordion-item .icons .minus-icon{
-    display: none;
+.accordion-description p{
+	color: var(--grayish-purple);
+	padding: 1.5rem 0;
 }
 
-.accordion-description{
-    max-height: 0;
-    background-color: white;
-    overflow: hidden;
-    transition: max-height 200ms ease;
+:root {
+	--white:hsl(0,0%,100%);
+	--light-pink:hsl(275,100%,97%);
+	--grayish-purple:hsl(292,16%,49%);
+	--dark-purple:hsl(292,42%,14%);
 }
 
-.accordion-description p {
-    color:#887191;
+@media (max-width:540px) {
+	body{
+		background-image: url(assets/images/background-pattern-mobile.svg);
+	}
 }
-@media  (max-width: 540px) {
-    body{
-        background-image: url(images/background-pattern-mobile.svg);
-    }
-}
-    
-
