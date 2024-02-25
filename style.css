@@ -1,0 +1,58 @@
+body{
+    background-color: var(--lightpink);
+    background-repeat: no-repeat;
+    background-image: url(images/background-pattern-desktop.svg);
+    display: grid;
+    background-size: 100%;
+    font-family: 'sans-serif';
+    align-content: center;
+}
+img, svg {
+    display: block;
+    max-width: 100%;
+}
+
+button {
+    border: 0;
+    background-color: transparent;
+    padding: 1rem;
+    text-align: left;
+    align-items: center;
+    gap: 1rem;
+    display: flex;
+    cursor: pointer;
+    width: 100%;
+    font-weight: 800;
+    justify-content: space-between;
+}
+
+button:hover {
+    color: purple;
+}
+.container{
+    border-radius: 2rem;
+    padding: 1.6rem;
+    margin: 2rem;
+    max-width: 900px;
+}
+
+.faq-headline{
+    gap: 2rem;
+}
+
+.faq-headline h1{
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.accordion-container .accordion-item:not(:last-child){
+    border-bottom: 2px solid var(--lightpink);
+}
+
+.accordion-item .icons img{
+    min-width: 30px;
+}
+
+.accordion-item .icons .minus-icon{
+    display: none;
+}
