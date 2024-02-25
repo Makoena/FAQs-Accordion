@@ -37,6 +37,7 @@ https://github.com/Makoena/FAQs-Accordion.git
 
 
  const accordionBtns =document.querySelectorAll('.accordion-btn')
+
 accordionBtns.forEach(btn => {
     btn.addEventListener('click', function() {
         this.classList.toggle('active')
@@ -44,7 +45,7 @@ accordionBtns.forEach(btn => {
         const plusIcon = this.querySelector('.plus-icon')
         const minusIcon = this.querySelector('.minus-icon')
 
-if(accordionDescription.style.maxHeight){
+        if(accordionDescription.style.maxHeight){
             accordionDescription.style.maxHeight=null
             plusIcon.style.display='block'
             minusIcon.style.display ='none'
