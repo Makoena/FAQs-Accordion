@@ -25,7 +25,7 @@ https://github.com/Makoena/FAQs-Accordion.git
 # Built with
 - HTML5
 - CSS
--JavaScript
+- JavaScript
 
 
 # What I learned
