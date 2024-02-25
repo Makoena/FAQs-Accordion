@@ -43,7 +43,8 @@ accordionBtns.forEach(btn => {
         const accordionDescription = this.nextElementSibling
         const plusIcon = this.querySelector('.plus-icon')
         const minusIcon = this.querySelector('.minus-icon')
- if(accordionDescription.style.maxHeight){
+
+if(accordionDescription.style.maxHeight){
             accordionDescription.style.maxHeight=null
             plusIcon.style.display='block'
             minusIcon.style.display ='none'
